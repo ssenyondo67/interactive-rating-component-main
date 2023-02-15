@@ -1,0 +1,130 @@
+:root{
+    --color-white:hsl(0,0%,100%);
+    --color-text:hsl(217,12%,63%);
+    --color:hsl(216,12%,54%);
+   --color-backgroun-2:#252d37;
+   --color-background-1:#121417;
+   --color-orange:hsl(25,97%,53%);
+   --box-shadow: 3px 3px 50px 19px rgba(18,20,23,.6);
+
+}
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg__selected{
+    background: var(--color-orange);
+}
+
+   
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+main{
+    width: 100vw;
+    height: 95vh;
+    background: var(--color-background-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90vw;
+    max-width: 400px;
+    background: var(--color-backgroun-2);
+    padding: 1.4rem;    
+    position: relative;
+    border-radius: 20px;
+    
+    height: 65vh;
+}
+.image-star{
+    padding: 1em;
+    
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+}
+.section{
+    display: none;
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5em;
+    gap: 1rem;
+   
+}
+.section1{
+    display: flex;
+    
+}
+.section--title{
+    font-weight: 700;
+    color: var(--color-white);
+    font-size:2rem ;
+    margin-bottom: 1rem;
+}
+.section--description{
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+.numbers{
+    display: flex;
+    margin-block: 1rem;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.number{
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+   width: 3rem;
+   aspect-ratio: 1/1;
+   border-radius: 50px;
+   display: flex;
+   color: var(--color-text);
+   align-items: center;
+   justify-content: center;
+   box-shadow: var(--box-shadow);
+}
+.number:hover{
+    background:var(--color);
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: var(--color-white);
+    background: var(--color-orange);
+    padding: .3em;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.display{
+    
+    padding: .5em 1em;
+    width: fit-content;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    color: var(--color-orange);
+    margin: 1rem;
+}
+#section2 {
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+}
